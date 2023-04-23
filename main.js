@@ -12,17 +12,24 @@ function verificarCaracteres(valorTexto){
     for(let i = 0 ; i < valorTexto.length ; i++){
         if(!listaPermitidos.includes(valorTexto[i])) verificado++;
     }
-    
 
     if(verificado != 0) return true;
     return false; //si todo salió bien y no hay caracter especial.
+}
+
+function alertaError(){
+    texto.style.borderColor = "red";
+    setTimeout(function(){
+        texto.style.borderColor = "black"
+    },100);
+    
 }
 
 
 function encriptarTexto(){
     let valorTexto = (texto.value).toLowerCase();
     let textoEncriptado = "";
-    if(verificarCaracteres(valorTexto)) return false; // AQUI SI LA VERIFICACIÓN SALE MAL
+    if(verificarCaracteres(valorTexto)) return alertaError(); // AQUI SI LA VERIFICACIÓN SALE MAL
 
     for(let i = 0; i < valorTexto.length; i++){
 
