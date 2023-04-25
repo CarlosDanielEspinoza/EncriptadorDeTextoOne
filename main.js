@@ -79,6 +79,7 @@ function desencriptarTexto(){
 function copiarTexto(){
     navigator.clipboard.writeText(resultado.textContent);
     texto.focus();
+    texto.select();
 }
 
 botonEncriptar.onclick = encriptarTexto;
