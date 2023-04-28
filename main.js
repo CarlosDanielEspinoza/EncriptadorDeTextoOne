@@ -10,7 +10,7 @@ function verificarCaracteres(valorTexto){
     let verificado = 0;
 
     for(let i = 0 ; i < valorTexto.length ; i++){
-        if(!listaPermitidos.includes(valorTexto[i])) verificado++;
+        if(!listaPermitidos.includes(valorTexto[i]) && valorTexto[i].charCodeAt() != 10) verificado++;
     }
 
     if(verificado != 0) return true;
