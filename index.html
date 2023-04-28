@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <title>Encriptador de Texto</title>
 </head>
@@ -12,14 +13,18 @@
 
     <main>
         <section>
-            <textarea placeholder="Inserte Texto Aquí" id="texto" cols="30" rows="10" autofocus></textarea>
-            <button id="encriptar"> Encriptar </button>
-            <button id="desencriptar"> Desencriptar </button>
+            <textarea placeholder="Inserte Texto Aquí" id="texto" class="area-texto" cols="30" rows="10" autofocus></textarea>
+            <div class="seccion-botones">
+                <button id="encriptar" class="boton"> Encriptar </button>
+                <button id="desencriptar" class="boton"> Desencriptar </button>
+            </div>
         </section>
 
         <section>
-            <p id="resultado"></p>
-            <button id="copiar"> Copiar </button>
+            <div class="zona-resultado">
+                <p id="resultado" class="resultado-encriptacion"></p>
+            </div>
+            <button id="copiar" class="boton-copiar"> Copiar </button>
         </section>
     </main>
     

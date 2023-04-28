@@ -1,4 +1,46 @@
+main{
+    background-color: aquamarine;
+    width: 80%;
+    padding: 2em 5em 2em 5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+section{
+    vertical-align: top;
+    display: inline-block;
+    width: 40%;
+    height: 90%;
+    padding: 5px;
+}
+
 #texto{
     resize: none;
     border-color: black;
+    width: 90%;
+    background-color: white;
+    border-radius: 1em;
+    border-color: black;
+    border: 3px;
+    border-style: solid;
+    padding: 0.3em;
+    text-align: center;
+}
+
+.seccion-botones{
+    display: block;
+    padding: 1em;
+}
+
+.zona-resultado{
+    display: block;
+    background-color: white;
+    border-radius: 1em;
+    border-color: black;
+    border: 3px;
+    border-style: solid;
+    width: 90%;
+    height: 10em;
+    padding: 0.3em;
+    text-align: center;
 }
