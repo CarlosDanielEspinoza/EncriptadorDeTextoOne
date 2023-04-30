@@ -1,30 +1,64 @@
+body{
+    background-color: #F3F5FC;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header{
+    width: 90%;
+    padding: 2em 5em 2em 5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header h1{
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 36px;
+    display: inline;
+}
+
 main{
-    background-color: aquamarine;
-    width: 80%;
+    width: 90%;
     padding: 2em 5em 2em 5em;
     margin: 0 auto;
     text-align: center;
 }
 
 section{
+    text-align: center;
     vertical-align: top;
     display: inline-block;
     width: 40%;
-    height: 90%;
+    height: 70vh;
     padding: 5px;
 }
 
-#texto{
+.primera-seccion{
+    padding-right: 5%;
+}
+
+.segunda-seccion{
+    width: 25%;
+}
+
+.area-texto{
     resize: none;
-    border-color: black;
+    border-color: none;
     width: 90%;
-    background-color: white;
-    border-radius: 1em;
-    border-color: black;
-    border: 3px;
-    border-style: solid;
-    padding: 0.3em;
+    height: 55vh;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    outline: none;
+    padding: 0.5em;
     text-align: center;
+    color: #0A3871;
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .seccion-botones{
@@ -32,15 +66,88 @@ section{
     padding: 1em;
 }
 
+.boton{
+    font-size: 16px;
+    font-weight: 400;
+    width: 200px;
+    height: 40px;
+    margin-bottom: 0.3em;
+    border-radius: 0.4em;
+    border: 3px;
+    border-style: solid;
+    cursor: pointer;
+    outline: none;
+    padding: 0.2em;
+    
+    background-color: white;
+    color: #0A3871;
+    border-color: #0A3871;
+    transition: transform 0.2s;
+}
+
+.boton:hover{
+    transform: scale(1.02);
+}
+
+.boton:active{
+    filter: brightness(1.3);
+}
+
+#encriptar{
+    background-color: #0A3871;
+    color: white;
+}
+
 .zona-resultado{
     display: block;
     background-color: white;
     border-radius: 1em;
-    border-color: black;
-    border: 3px;
-    border-style: solid;
-    width: 90%;
-    height: 10em;
-    padding: 0.3em;
+    width: 100%;
+    min-height: 55vh;
+    height: auto;
+    padding: 0.5em;
+    padding-top: 1em;
     text-align: center;
+    font-style: italic;
+}
+
+.resultado-encriptacion{
+    color: #495057;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+#copiar{
+    width: auto;
+    min-width: 100%;
+}
+
+footer{
+    width: 90%;
+    padding: 2em 5em 2em 5em;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+@media (max-width:570px){
+
+    section{
+        display: inline;
+        height: 40%;
+    }
+
+    .area-texto{
+        height: auto;
+    }
+    .zona-resultado{
+        min-height: 10vh;
+        height: auto;
+    }
+
+    #copiar{
+        width: auto;
+        min-width: 200px
+    }
 }
