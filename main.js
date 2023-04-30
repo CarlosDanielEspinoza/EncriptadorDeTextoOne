@@ -18,9 +18,9 @@ function verificarCaracteres(valorTexto){
 }
 
 function alertaError(){
-    texto.style.borderColor = "red";
+    texto.style.color = "red";
     setTimeout(function(){
-        texto.style.borderColor = "black"
+        texto.style.color = "#0A3871";
     },100);
     
 }
