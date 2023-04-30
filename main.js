@@ -6,7 +6,7 @@ const resultado = document.querySelector("#resultado");
 
 //Verificar que los caracteres introducidos no sean especiales.
 function verificarCaracteres(valorTexto){
-    let listaPermitidos = " qwertyuiopasdfghjklzxcvbnm1234567890¿?¡!";
+    let listaPermitidos = " qwertyuiopasdfghjklzxcvbnm1234567890¿?¡!.,:;";
     let verificado = 0;
 
     for(let i = 0 ; i < valorTexto.length ; i++){
